@@ -14,9 +14,9 @@ def dayOfProgrammer(year):
     month=0
     numbers_of_days_in_months=[31,28,31,30,31,30,31,31,30,31,30,31]
 
-    if (year%400==0 or (year%100!=0and year%4==0)) and (year>=1700 and year<=2700):
+    if (year%400==0 or (year%100!=0 and year%4==0)) and (year>=1700 and year<=2700):
         numbers_of_days_in_months[1]=29
-    elif (year%400!=0 or (year%100==0 and year%4!=0)) and (year>=1700and year<=2700): 
+    elif (year%400!=0 or (year%100==0 and year%4!=0)) and (year>=1700 and year<=2700): 
         numbers_of_days_in_months[1]=28  
     if year==1918:
         numbers_of_days_in_months[2]=28-13    
